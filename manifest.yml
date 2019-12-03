@@ -3,6 +3,8 @@ language: staticfile
 default_versions:
 - name: nginx
   version: 1.17.x
+- name: mysql-client
+  version: 5.7.x
 dependencies:
 - name: nginx
   version: 1.17.6
@@ -12,6 +14,12 @@ dependencies:
   - cflinuxfs3
   source: http://nginx.org/download/nginx-1.17.6.tar.gz
   source_sha256: 3cb4a5314dc0ab0a4e8a7b51ae17c027133417a45cc6c5a96e3dd80141c237b6
+- name: mysql-client
+  version: 5.7.28
+  uri: mysql-client_5.7.28-1ubuntu18.04_amd64.deb
+  source: mysql-client_5.7.28-1ubuntu18.04_amd64.deb
+  cf_stacks:
+  - cflinuxfs3
 pre_package: scripts/build.sh
 include_files:
 - CHANGELOG
