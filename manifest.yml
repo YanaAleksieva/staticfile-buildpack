@@ -16,8 +16,8 @@ dependencies:
   source_sha256: 3cb4a5314dc0ab0a4e8a7b51ae17c027133417a45cc6c5a96e3dd80141c237b6
 - name: mysql-client
   version: 5.7.28
-  uri: mysql-client_5.7.28-1ubuntu18.04_amd64.deb
-  source: mysql-client_5.7.28-1ubuntu18.04_amd64.deb
+  uri: https://ubuntu.pkgs.org/18.04/mysql-5.7-amd64/mysql-client_5.7.28-1ubuntu18.04_amd64.deb.html
+  source: https://ubuntu.pkgs.org/18.04/mysql-5.7-amd64/mysql-client_5.7.28-1ubuntu18.04_amd64.deb.html
   cf_stacks:
   - cflinuxfs3
 pre_package: scripts/build.sh
